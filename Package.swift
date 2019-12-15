@@ -10,7 +10,7 @@ let package = Package(
     .library(name: "DeckOfPlayingCards", targets: ["DeckOfPlayingCards"]),   
     ],
     dependencies: [
-        .package(url: "git@github.com:fuck-repo/Fisheryates.git", from: "1.0.0"),
+        .package(url: "git@github.com:fuck-repo/FisherYates.git", from: "1.0.0"),
         .package(url: "git@github.com:fuck-repo/PlayingCard.git", from: "1.1.0"),
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
@@ -20,7 +20,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "DeckOfPlayingCards",
-            dependencies: ["Fisheryates", "PlayingCard"]),
+            dependencies: ["FisherYates", "PlayingCard"]),
         .testTarget(
             name: "DeckOfPlayingCardsTests",
             dependencies: ["DeckOfPlayingCards"]),
